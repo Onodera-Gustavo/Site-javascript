@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Conversor de Moedas</title>
+    <script>
+        function conversorMoedas() {
+            
+            let valor = parseFloat(document.getElementById("BRL").value);
+            let moeda = document.getElementById("moeda").value.toLowerCase();
+
+            
+            const taxaDolar = 5.0; 
+            const taxaEuro = 5.5;  
+            const taxaLibra = 6.0; 
+
+            
+            let resultado;
+
+            switch (moeda) {
+                case "dólar":
+                    resultado = valor / taxaDolar;
+                    alert(`O valor de R$${valor.toFixed(2)} BRL em dólar é $${resultado.toFixed(2)}`);
+                    break;
+                case "euro":
+                    resultado = valor / taxaEuro;
+                    alert(`O valor de R${valor.toFixed(2)} BRL em euro é €${resultado.toFixed(2)}`);
+                    break;
+                case "libra":
+                    resultado = valor / taxaLibra;
+                    alert(`O valor de R$${valor.toFixed(2)} BRL em libra é £${resultado.toFixed(2)}`);
+                    break;
+                default:
+                    alert("Por favor, digite uma moeda válida (dólar, euro ou libra).");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="download (1).jpg" alt="">
+    <div class="container1">
+    <h1>CONVERSOR DE MOEDAS</h1>
+    <p>Digite o valor que quer converter e escolha a moeda desejada:</p>
+    <input type="number" id="BRL" placeholder="Digite o valor em BRL">
+    <input type="text" id="moeda" placeholder="Digite a moeda (dólar, euro, libra)">
+    <button onclick="conversorMoedas()">Converter</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tip.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>Gorjeta</title>
+</head>
+<body>
+    <div id="receipt">
+        <h1>Conta</h1>
+        <h2>Pedido no. 001</h2>
+        <p>Lasanha</p><br>
+        <p>Spaghetti com Almondegas</p><br>
+        <p>Coca-Cola</p>
+
+        <p>Valor:<input type="number" id="valor" placeholder="Digite o valor da conta:"></p>
+        <p>Avalie o Serviço</p>
+        <div id="button">
+            <button onclick="tip1()" id="bom">Bom!</button>
+            <button onclick="tip2()" id="otimo">Ótimo!</button>
+            <button onclick="tip3()" id="excel">Excelente!</button>
+        </div>
+        <p id="gorjeta"></p><br>
+        <p id="conta"></p>
+
+
+    </div>
+    <script src="tip.js"></script>
+</body>

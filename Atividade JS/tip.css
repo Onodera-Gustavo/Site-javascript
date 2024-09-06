@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#receipt{
+    width: 30em;
+    background-color: antiquewhite;
+    margin: auto;
+    position: relative;
+    display: grid;
+    margin-top: 2em;
+}
+
+p{
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 2em;
+  margin-bottom: .6em;
+}
+
+h1{
+    text-align: center;
+    margin-top: 1em;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+h2{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+button{
+    width: 7em;
+    border: 2px solid black;
+    text-align: center;
+    height: 3em;
+    background-color: transparent;
+    appearance: none;
+
+}
+
+#button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 2em;
+    appearance: none;
+}
+
+input{
+    width: 10em;
+    border: none;
+    border-bottom:  2px dotted black;
+    background-color: antiquewhite;
+    margin-left: 2em;
+    margin-top: 5em;
+    font-size: 1em;
+    text-align: center;
+}
+
+#conta{
+    margin-bottom: 6em;
+}

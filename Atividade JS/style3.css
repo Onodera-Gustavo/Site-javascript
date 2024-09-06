@@ -1,0 +1,26 @@
+body{
+background-color: rgb(219, 198, 151);
+}
+.container{
+    background-color: antiquewhite;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    background-image: url(https://blog.kangaroo.com.br/wp-content/uploads/2018/08/Luzes-do-Norte_Fredvang_Lofoten.jpg);
+    position: absolute;
+    padding: 100px;
+    left: 30%;
+    top: 22%;
+}
+
+.container p {
+    font-size: 22px;
+    color: aliceblue;
+}
+h1{
+    color: aliceblue;
+}
+input[type="number"] {
+    
+    width: 31%;
+}

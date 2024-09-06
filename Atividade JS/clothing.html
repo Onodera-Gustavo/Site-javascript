@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>recomendação de roupas</title>
+    <script>
+        function recomendaçãodeRoupas() {
+          let temperatura= parseInt(document.getElementById("temperatura").value);
+          switch (true){
+            case (temperatura>= 26):
+                alert("hoje está calor, recomendação é usar camiseta e chapéu");
+                break;
+                case (temperatura <= 25 && temperatura >=15):
+                    alert("hoje temperatura está amena,recomendação é usar jaqueta e cachecol");
+                    break;
+                    case (temperatura  <15):
+                        alert("hoje está frio, recomendação é usar casaco e luvas")
+                
+          }
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>RECOMENDAÇÃO DE ROUPAS</h1>
+        <P>Digite qual temperatura de hoje para que eu possa indicar a melhor roupa para você usar</P>
+        <input type="number" id="temperatura" placeholder="digite o valor da temperatura">
+        <button onclick="recomendaçãodeRoupas()">clique aqui</button>
+    </div>
+    
+</body>
+</html>

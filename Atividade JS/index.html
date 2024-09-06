@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div id="top">
+        <h1 class="fixed">Caminho</h1>
+        <img class="img" src="imgs/js-logo.png">
+        <h2 id="title">Lv.1 - Variáveis: Declaração e Tipos</h2>
+    
+        <div id="flag">
+            <img src="imgs/flag.png">
+            <div id="bar">
+                <div id="progress"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="guess">
+            <h4>1. Jogo de Adivinhação</h4>
+            <a href="adivinhar.html" target="_blank"><img src="imgs/question.png"></a>
+            <p>Tema: Diversão<br>
+                Entrada: Número escolhido pelo usuário (entre 1 e 10)<br>
+                Lógica: O programa escolhe um número aleatório entre 1 e 10. Verifica se o número do usuário é igual ao número sorteado. 
+                Se sim, exibe "Parabéns, 
+                você acertou!"; caso contrário, exibe "Tente novamente!".
+            </p>
+        </div>
+
+        <div id="leap">
+            <h4>2. Verificação de Ano<br>Bissexto</h4>
+            <a href="leap.html" target="_blank"><img src="imgs/leap.png"></a>
+            <p>
+                Tema: Calendário<br>
+                Entrada: Ano escolhido pelo usuário<br>
+                Lógica: Verifica se o ano é bissexto (divisível por 4, 
+                mas não por 100, exceto se for divisível por 400). 
+                Se sim, exibe "O ano é bissexto!"; caso contrário, 
+                exibe "O ano não é bissexto".
+            </p>
+
+        </div>
+
+        <div id="avg">
+            <h4>3. Calculadora de Média Escolar</h4>
+            <a href="avg.html" target="_blank"><img src="imgs/avg.png"></a>
+            <p>
+                Tema: Escola<br>
+                Entrada: Notas de quatro provas (prova1, prova2, prova3, prova4)<br>
+                Lógica:<br>
+                  Calcula a média das quatro notas.<br>
+                  Verifica se a média é maior ou igual a 7. Se sim, exibe "Aprovado!".<br>
+                  Caso contrário, verifica se a média é maior ou igual a 5. Se sim, exibe "Recuperação".<br>
+                  Se a média for menor que 5, exibe "Reprovado".
+            </p>
+        
+        </div>
+
+        <div id="tip">
+            <h4>4. Calculadora de Gorjeta</h4>
+            <a href="tip.html" target="_blank"><img src="imgs/tip.png"></a>
+            <p>
+                Tema: Restaurante<br>
+                Entrada: Valor da conta e nível de satisfação (bom, ótimo, excelente)<br>
+                Lógica: Calcula a gorjeta a ser dada com base no nível de satisfação (por exemplo: 10% para bom, 15% para ótimo, 20% para excelente).
+                Exibe o valor da gorjeta e o valor total a ser pago.
+            </p>
+        </div>
+
+        <div id="greet">
+            <h4>5. Saudação de Acordo com a Hora</h4>
+            <a href="greet.html" target="_blank"><img src="imgs/clock.png"></a>
+            <p>
+                Tema: Boas Maneiras<br>
+                Entrada: Nenhuma (o programa obtém a hora atual do sistema)<br>
+                Lógica: Verifica a hora atual e exibe a saudação apropriada ("Bom dia!", "Boa tarde!" ou "Boa noite!").
+            </p>
+        
+        </div>
+    </div>
+
+    <!--Parte 2  Switch Case---->
+
+
+    <div id="content-2">
+
+        <div id="filme">
+            <h4>1. Classificação de Filmes</h4>
+            <a href="movie.html" target="_blank"><img src="imgs/film.png"></a>
+            <p>
+                Crie uma função que recebe a idade do espectador e o gênero do filme
+                 e recomenda um filme baseado nas seguintes categorias:<br>
+                 Crianças (0-12 anos): Animação, Aventura<br>
+                 Jovens (13-17 anos): Ação, Drama<br>
+                 Adultos (18-64 anos): Comédia, Suspense<br>
+                 Idosos (65+ anos): Romance, Documentário
+            </p>
+        </div>
+
+        <div id="frete">
+            
+            <h4>2. Calculadora de Frete</h4>
+            <a href="frete.html" target="_blank"><img src="imgs/frete.png"></a>
+            <p>
+                Implemente uma função que calcula o frete baseado no peso do pacote e na região de entrega. <br>
+                As regiões e tarifas são:<br>
+                Norte: até 5kg - R$ 15, acima de 5kg - R$ 25<br>
+                Sul: até 5kg - R$ 10, acima de 5kg - R$ 20<br>
+                Centro-Oeste: até 5kg - R$ 12, acima de 5kg - R$ 22
+            </p>
+
+        </div>
+
+        <div id="score">
+            <h4>3. Calculadora de Pontuação de Jogo</h4>
+            <a href="score.html" target="_blank"><img src="imgs/trophy.png"></a>
+            <p>
+                Desenvolva uma função que recebe a pontuação de um jogo e determina o nível do jogador:<br>
+                0 a 199: Iniciante<br>
+                200 a 499: Intermediário<br>
+                500 a 999: Avançado<br>
+                1000 ou mais: Mestre
+            </p>
+        </div>
+
+        <div id="senha">
+            <h4>4. Validação de Senha</h4>
+            <a href="password.html" target="_blank"><img src="imgs/senha.png"></a>
+            <p>
+                Implemente uma função que verifica se a senha atende aos critérios de segurança:<br>
+                Deve ter entre 8 e 16 caracteres<br>
+                Deve conter pelo menos uma letra maiúscula<br>
+                Deve conter pelo menos um número<br>
+                Deve conter pelo menos um caractere especial (@, #, $, %, &, *)
+            </p>
+        </div>
+
+        <div id="roupa">
+            <h4>5. Recomendações de Roupas</h4>
+            <a href="clothing.html" target="_blank"><img src="imgs/roupa.png"></a>
+            <p>
+                Crie uma função que recomenda roupas para um dia com base na temperatura:<br>
+                Frio (abaixo de 15°C): Casaco, Luvas<br>
+                Ameno (15°C a 25°C): Jaqueta, Cachecol<br>
+                Quente (acima de 25°C): Camiseta, Chapéu
+            </p>
+        </div>
+
+        <div id="moeda">
+            <h4>6. Conversor de Moeda</h4>
+            <a href="currency.html" target="_blank"><img src="imgs/moeda.png"></a>
+            <p>
+                Desenvolva uma função que converte um valor de reais (BRL) para outra moeda com base na moeda escolhida. 
+                As taxas de câmbio são:<br>
+                Dólar (USD): 1 USD = 5 BRL<br>
+                Euro (EUR): 1 EUR = 5.5 BRL<br>
+                Libra Esterlina (GBP): 1 GBP = 6 BRL
+            </p>
+        </div>
+    </div>
+
+
+    <!--Parte 3  Laços de Repetição---->
+    <div id="content-3">
+        
+        <div id="tabuada">
+            <h4>1. Tabuada</h4>
+        </div>
+
+        <div id="elder">
+            <h4>2. Mais Velho</h4>
+        </div>
+
+        <div id="par">
+            <h4>3. Par || Ímpar</h4>
+
+        </div>
+
+        <div id="random">
+            <h4>4. Random</h4>
+        </div>
+
+        <div id="palind">
+            <h4>5. Palíndromo</h4>
+
+        </div>
+
+    </div>
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 97;
+          document.getElementById("progress").style.width = scrolled + "%";
+        }
+        
+        function position(){
+            let pos
+        }
+    
+    </script>
+
+
+</body>
+</html>
